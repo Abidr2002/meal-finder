@@ -1,0 +1,21 @@
+meal-list {
+  display: grid;
+  margin-top: 32px;
+  width: 100%;
+  padding: 16px;
+  gap: 2rem;
+}
+
+@media screen and (min-width: 678px) {
+  meal-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  meal-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
